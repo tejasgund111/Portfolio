@@ -1,6 +1,7 @@
 import studyNotionImage from '../public/StudyNotion.png'
 import chattyImage from '../public/Chatty.png'
 import shopNestImage from '../public/ShopNest.png'
+import jobApplicationTrackerImage from '../public/JobApplicationTracker.png'
 
 export const nav = ['about', 'experience', 'education', 'projects', 'skills', 'contact']
 export const roles = ['Full Stack Developer', 'MERN Stack Developer', 'React Developer', 'Node.js Developer']
@@ -13,7 +14,7 @@ export const stats = [['2+', 'Years Experience'], ['10+', 'Technologies'], ['5+'
 export const experience = [
   { company: 'Cognizant', role: 'Programmer Analyst', period: 'June 2025 – Present',
     points: ['Develop and maintain web applications using modern web technologies.', 'Integrate REST APIs and debug production issues across the stack.', 'Work in Agile sprints, collaborating with cross-functional teams.'] },
-  { company: 'Lawshield Cyber And Forensic Lab LLP', role: 'Software Developer', period: 'May 2024 – May 2025',
+  { company: 'Lawshield Cyber And Forensic Lab LLP', role: 'Software Engineer Intern - Full Time', period: 'May 2024 – May 2025',
     points: ['Built responsive interfaces with Next.js, React and Tailwind CSS.', 'Created reusable UI components that sped up feature delivery.', 'Collaborated on UI development and iterated on design feedback.'] },
 ]
 export const education = [
@@ -40,6 +41,12 @@ export const projects = [
     tech: ['React.js', 'Node.js', 'Express.js', 'MongoDB', 'Mongoose', 'Redux Toolkit', 'Razorpay', 'Cloudinary'],
     features: ['JWT authentication', 'Role-based authorization', 'Product browsing and management', 'Cart and checkout', 'Order management', 'Razorpay payments', 'Cloudinary image uploads', 'Admin analytics'],
     github: 'https://github.com/tejasgund111/ShopNest', live: 'https://shopnest-5fom.onrender.com/' },
+  { title: 'JobApplicationTracker', gradient: 'from-emerald-500/30 to-cyan-500/20',
+    image: jobApplicationTrackerImage,
+    desc: 'A job-search organizer for tracking applications on a personal Kanban board, from wish list through interviews and offers.',
+    tech: ['Next.js', 'React', 'TypeScript', 'MongoDB', 'Mongoose', 'Better Auth', 'Tailwind CSS', 'dnd-kit'],
+    features: ['Email and password authentication', 'Personal job board', 'Five application stages', 'Drag-and-drop application tracking', 'Job details, tags, descriptions, and notes', 'MongoDB persistence'],
+    github: 'https://github.com/tejasgund111/JobApplicationTracker', live: 'https://job-application-tracker-eight-ashy.vercel.app/' },
 ]
 export const skills = [
   { name: 'Languages', icon: 'Code2', items: ['JavaScript', 'TypeScript', 'Java', 'Python', 'C++'] },

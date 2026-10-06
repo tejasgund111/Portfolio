@@ -21,7 +21,7 @@ export default function ProjectCard({ p }) {
         <ul className="mt-4 flex flex-wrap gap-2">{p.tech.map((t) => <li key={t} className="rounded-full border border-violet-400/30 bg-violet-500/10 px-3 py-1 text-xs text-violet-200">{t}</li>)}</ul>
         <ul className="mt-4 grid grid-cols-2 gap-x-4 gap-y-1 text-xs text-zinc-500">{p.features.map((f) => <li key={f} className="before:mr-1.5 before:text-cyan-400 before:content-['▹']">{f}</li>)}</ul>
         <div className="mt-6 flex gap-3">
-          <a href={p.live} target="_blank" rel="noreferrer" className="flex items-center gap-2 rounded-full bg-gradient-to-r from-violet-500 to-cyan-500 px-5 py-2 text-sm font-semibold transition hover:scale-105">Live Demo <ExternalLink size={14} /></a>
+          {p.live && <a href={p.live} target="_blank" rel="noreferrer" className="flex items-center gap-2 rounded-full bg-gradient-to-r from-violet-500 to-cyan-500 px-5 py-2 text-sm font-semibold transition hover:scale-105">Live Demo <ExternalLink size={14} /></a>}
           <a href={p.github} target="_blank" rel="noreferrer" className="glass flex items-center gap-2 rounded-full px-5 py-2 text-sm font-semibold transition hover:scale-105">GitHub <Github size={14} /></a>
         </div>
       </div>
